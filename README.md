@@ -15,3 +15,8 @@
 * .ajaxSuccess() - Attach a function to be executed whenever an Ajax request completes successfully. 
 
 
+## jQuery Learning Resources
+- http://api.jquery.com/ (Documentation)
+- https://learn.jquery.com/
+- http://www.jquerybyexample.net/
+- https://code.tutsplus.com/courses/30-days-to-learn-jquery
