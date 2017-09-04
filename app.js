@@ -4,6 +4,10 @@
 $(document).ready (function() {
     console.log("ready");
 
+    $.each([3, 5, 7], function(index){
+        console.log(this + 1 + '!');
+    });
+
 
 });
 
