@@ -20,3 +20,5 @@
 - https://learn.jquery.com/
 - http://www.jquerybyexample.net/
 - https://code.tutsplus.com/courses/30-days-to-learn-jquery
+
+## Using this book: http://www.allitebooks.com/read/index.php?id=24901
