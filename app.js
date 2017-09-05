@@ -8,6 +8,7 @@ $(document).ready (function() {
         console.log(this + 1 + '!');
     });
 
+    // Trying to see what I can do with a $.each
     var array = ["one", "two", "three"];
 
     $.each(array, function (index) {
@@ -23,6 +24,12 @@ $(document).ready (function() {
 
         // console logs the first index (aka two)
         console.log(array[1])
+
+        // doesnt work because this is the vanilla js way
+        //console.log(array[i])
+
+        // console logs "three" for some reason
+        console.log(array[index])
     })
 
 
