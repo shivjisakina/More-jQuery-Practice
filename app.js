@@ -8,6 +8,23 @@ $(document).ready (function() {
         console.log(this + 1 + '!');
     });
 
+    var array = ["one", "two", "three"];
+
+    $.each(array, function (index) {
+
+        // turns it into ints
+        console.log(index)
+
+        // console logs the strings with each letter split up
+        console.log(this)
+
+        // console logs the array
+        console.log(array)
+
+        // console logs the first index (aka two)
+        console.log(array[1])
+    })
+
 
 });
 
