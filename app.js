@@ -32,6 +32,20 @@ $(document).ready (function() {
         console.log(array[index])
     })
 
+    var arr = [ "one", "two", "three", "four", "five" ];
+    var obj = { one: 1, two: 2, three: 3, four: 4, five: 5 };
+
+    $.each( arr, function( i, val ) {
+        $( "#" + val ).text( "Mine is " + val + "." );
+
+        // Will stop running after "three"
+        return ( val !== "three" );
+    });
+
+    $.each( obj, function( i, val ) {
+        $( "#" + i ).append( document.createTextNode( " - " + val ) );
+    });
+
 
 });
 
