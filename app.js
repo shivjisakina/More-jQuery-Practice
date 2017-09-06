@@ -46,6 +46,13 @@ $(document).ready (function() {
         $( "#" + i ).append( document.createTextNode( " - " + val ) );
     });
 
+    var foo = [];
+    var bar = ["Apple", "Mango", "Strawberry"];
+    var baz = "Test";
+    console.log('foo is an array: ' + $.isArray(foo)); // Returns true
+    console.log('bar is an array: ' + $.isArray(bar)); // Returns true
+    console.log('baz is an array: ' + $.isArray(baz)); // Returns false
+
 
 });
 
