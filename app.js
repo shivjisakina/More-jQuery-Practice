@@ -67,7 +67,7 @@ $(document).ready (function() {
     console.log('Index of Mango is: ' + $.inArray("Mango", fruits, 2)); //Returns -1
 
     // ====================================================================
-    // sorting and reversing
+    // Sorting and reversing
     // ====================================================================
 
     var empfName = ["John", "Adam", "Steve", "Peter"];
@@ -78,5 +78,15 @@ $(document).ready (function() {
     console.log(age.sort()); //Incorrect sort values. 40,70,9,98
     console.log(age.sort(function(a, b){return a-b})); //Correct sort values. 9,40,70,98
 
+    // Putting it in the html
+    $(".everything").text(age.sort(function(a, b){return a-b}));
+
+    // ====================================================================
+    // Removing from an array
+    // ====================================================================
+
+    var empfName2 = ["John", "Adam", "Steve", "Peter"];
+    var nameToRemove = "Adam";
+    console.log(empfName2.splice($.inArray(nameToRemove, empfName2), 1)); // ["Adam"]
 
 });
