@@ -53,6 +53,11 @@ $(document).ready (function() {
     console.log('bar is an array: ' + $.isArray(bar)); // Returns true
     console.log('baz is an array: ' + $.isArray(baz)); // Returns false
 
+    var fruits = ["Apple", "Mango", "Strawberry", "Plum"];
+    console.log('Index of Apple is: ' + $.inArray("Apple", fruits)); //Returns 0
+    console.log('Index of Banana is: ' + $.inArray("Banana", fruits)); //Returns -1
+    console.log('Index of Mango is: ' + $.inArray("Mango", fruits, 2)); //Returns -1
+
 
 });
 
