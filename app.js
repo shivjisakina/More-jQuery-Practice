@@ -4,6 +4,10 @@
 $(document).ready (function() {
     console.log("ready");
 
+    // ====================================================================
+    // $.each
+    // ====================================================================
+
     $.each([3, 5, 7], function(index){
         console.log(this + 1 + '!');
     });
@@ -46,6 +50,10 @@ $(document).ready (function() {
         $( "#" + i ).append( document.createTextNode( " - " + val ) );
     });
 
+    // ====================================================================
+    // $.isArray
+    // ====================================================================
+
     var foo = [];
     var bar = ["Apple", "Mango", "Strawberry"];
     var baz = "Test";
@@ -58,49 +66,17 @@ $(document).ready (function() {
     console.log('Index of Banana is: ' + $.inArray("Banana", fruits)); //Returns -1
     console.log('Index of Mango is: ' + $.inArray("Mango", fruits, 2)); //Returns -1
 
+    // ====================================================================
+    // sorting and reversing
+    // ====================================================================
+
+    var empfName = ["John", "Adam", "Steve", "Peter"];
+    console.log(empfName.sort()); // Will produce Adam, John, Peter, Steve
+    console.log(empfName.reverse()) // Will produce Steve, Peter, John, Adam
+
+    var age = [40, 70, 9, 98];
+    console.log(age.sort()); //Incorrect sort values. 40,70,9,98
+    console.log(age.sort(function(a, b){return a-b})); //Correct sort values. 9,40,70,98
+
 
 });
-
-/*
-
-==========================================================
-
-EXAMPLES TO HELP ME THROUGH JQUERY
-
- // On click functions
- $(document).on("click", ".????", function () { })
- $("#gifsarea").on("click", function() { });
-
- // empty
- $("#???").empty();
-
- // Giving attributes
- var shows = $(this).attr("data-show");
-
-// Prepending
- $("#gifsarea").prepend(showDiv);
-
-
-==========================================================
-
-APIS AND AJAX CALLS
-
-
- var queryURL = "???" +
- <variable that holds user input> + "???";
- console.log(queryURL);
-
-// AJAX request
- $.ajax({
- url: queryURL
- }).done(function (response) {
-
- // Storing data from AJAX request in a variable
- var results = response.data;
-
- });
-
-==========================================================
-
-
- */
