@@ -89,4 +89,16 @@ $(document).ready (function() {
     var nameToRemove = "Adam";
     console.log(empfName2.splice($.inArray(nameToRemove, empfName2), 1)); // ["Adam"]
 
+    // removing duplicate items from array
+    function removeDuplicate(arrItems) {
+        var newArr = [];
+        $.each(arrItems, function(i, e) {
+            if ($.inArray(e, newArr) == -1) newArr.push(e);
+        });
+        return newArr;
+    }
+    var numbers = [1, 4, 16, 10, 4, 8, 16];
+    var newArr = removeDuplicate(numbers);
+    console.log(newArr) // 1, 4, 16, 10, 8
+
 });
